@@ -1,0 +1,70 @@
+@charset "UTF-8";
+
+/*
+<!--
+O cabeçalho HTTP Referrer-Policy controla quanta informação de referência (en-US) (enviado pelo cabeçalho Referer) deve ser incluída nas requisições.
+
+Referrer-Policy: no-referrer
+Referrer-Policy: no-referrer-when-downgrade
+Referrer-Policy: origin
+Referrer-Policy: origin-when-cross-origin
+Referrer-Policy: same-origin
+Referrer-Policy: strict-origin
+Referrer-Policy: strict-origin-when-cross-origin
+Referrer-Policy: unsafe-url
+
+no-referrer
+O cabeçalho Referer será omitido completamente. Nenhuma informação de referência será enviada junto com as requisições.
+
+no-referrer-when-downgrade (padrão)
+Este é o comportamento padrão quando nenhuma política é especificada, ou se o valor provido é inválido. A origem, caminho e cadeia de consulta (origin, path, and querystring) da URL são enviadas como referência quando os níveis de protocolo de segurança continuam os mesmos (HTTP→HTTP, HTTPS→HTTPS) ou melhora (HTTP→HTTPS), mas não é enviado para destinos menos seguros (HTTPS→HTTP).
+
+Nota: Existe um esforço dos navegadores em mover para um valor padrão mais estrito, chamado de strict-origin-when-cross-origin (veja https://github.com/whatwg/fetch/pull/952), considere usar este valor (ou um mais estrito), se possível, quando trocando a Referrer-Policy.
+
+origin
+Somente envia a origem (origin) do documento como referência. Por exemplo, um documento em https://example.com/page.html irá mandar a referência https://example.com/.
+
+origin-when-cross-origin
+Envia a origem, caminho e cadeia de consulta quando performando uma requisição same-origin (en-US), mas somente envia a origem do documento em outros casos.
+
+same-origin
+A referência será enviada para origens do mesmo site (en-US), mas requisições entre origens não enviarão informação de referência.
+
+strict-origin
+Envia somente a origem do documento como referência quando o nível de protocolo de segurança se mantém o mesmo (HTTPS→HTTPS), mas não o envia para um destinatário menos seguro (HTTPS→HTTP).
+
+strict-origin-when-cross-origin
+Envia a origem, caminho e cadeia de consulta quando performando uma requisição de mesma origem, somente envia a origem quando o nível do protocolo de segurança se mantém o mesmo durante uma requisição entre origens (HTTPS→HTTPS), e envia nenhum cabeçalho para destinatários menos seguros (HTTPS→HTTP).
+
+unsafe-url
+Envia a origem, o caminho e a cadeia de consulta quando performando qualquer requisição, independente da segurança.
+-->
+
+<!--
+    HTML | ATRIBUTO SANDBOX
+O atributo sandbox permite um conjunto adicional de restrições para o conteúdo do iframe. Quando o atributo sandbox existe, ele irá:
+tratar o conteúdo como sendo de uma origem única: 
+ 
+
+Bloqueia o envio de formulários
+Bloqueia a execução do script
+Desativa APIs
+Também evita que os links tenham como alvo outros contextos de navegação
+Ele interrompe o conteúdo para navegar em seu contexto de navegação de nível superior
+bloquear recursos acionados automaticamente (como a reprodução automática de um vídeo ou o foco automático de um controle de formulário)
+O valor do atributo sandbox será simplesmente sandboxed (então todas as restrições serão aplicadas) ou uma lista separada por espaço de valores predefinidos que eliminará as restrições reais.
+Tags suportadas: 
+ 
+
+<iframe>
+Valor do atributo s  
+
+sem valores: aplica todas as restrições
+allow-forms: Reativa o envio do formulário
+allow-pointer-lock: Reativa APIs
+allow-popups: Reativa pop-ups
+allow-same-origin: permite que o conteúdo do iframe seja tratado como sendo da mesma origem
+allow-scripts: Reativa scripts
+allow-top-navigation: Permite que o conteúdo do iframe navegue em seu contexto de navegação de nível superior.
+-->
+*/
