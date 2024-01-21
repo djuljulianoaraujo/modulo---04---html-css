@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <link rel="stylesheet" href="estilo/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Meu Site</h1>
+        <span id="burguer" class="material-icons" onclick="clickMenu()">reorder</span>
+        <menu id="itens">
+            <ul>
+                <a href="#"><li>Opção 01</li></a>
+                <a href="#"><li>Opção 02</li></a>
+                <a href="#"><li>Opção 03</li></a>
+                <a href="#"><li>Opção 04</li></a>
+                <a href="#"><li>Opção 05</li></a>
+            </ul>
+        </menu>
+    </header>
+
+    <main>
+        <article>
+            <h2>Testando Media Queries</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore recusandae ratione quae voluptas quidem deserunt, dolorem temporibus ullam nulla repellendus dolore voluptatum quisquam eveniet sapiente quo deleniti distinctio beatae consequatur. 
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime earum recusandae perspiciatis laboriosam dolores explicabo, nihil, labore ipsum impedit ipsam molestiae voluptate quos! Atque modi perspiciatis natus quibusdam id exercitationem.
+            </p>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore recusandae ratione quae voluptas quidem deserunt, dolorem temporibus ullam nulla repellendus dolore voluptatum quisquam eveniet sapiente quo deleniti distinctio beatae consequatur. 
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime earum recusandae perspiciatis laboriosam dolores explicabo, nihil, labore ipsum impedit ipsam molestiae voluptate quos! Atque modi perspiciatis natus quibusdam id exercitationem.
+            </p>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore recusandae ratione quae voluptas quidem deserunt, dolorem temporibus ullam nulla repellendus dolore voluptatum quisquam eveniet sapiente quo deleniti distinctio beatae consequatur. 
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime earum recusandae perspiciatis laboriosam dolores explicabo, nihil, labore ipsum impedit ipsam molestiae voluptate quos! Atque modi perspiciatis natus quibusdam id exercitationem.
+            </p>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore recusandae ratione quae voluptas quidem deserunt, dolorem temporibus ullam nulla repellendus dolore voluptatum quisquam eveniet sapiente quo deleniti distinctio beatae consequatur. 
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime earum recusandae perspiciatis laboriosam dolores explicabo, nihil, labore ipsum impedit ipsam molestiae voluptate quos! Atque modi perspiciatis natus quibusdam id exercitationem.
+            </p>
+        </article>
+    </main>
+
+    <script>
+        function clickMenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }
+        }
+    </script>
+</body>
+</html>
