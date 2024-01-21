@@ -44,6 +44,7 @@ menu >ul{
 menu a{
     display: block;
     padding: 10px;
+    font-weight: bolder;
     text-decoration: none;
     text-align: center;
     background-image: linear-gradient(360deg, rgb(0, 0, 80), rgb(1, 1, 156));
